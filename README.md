@@ -1,6 +1,8 @@
-# ChatBot
+[![](https://github.com/leon-fong/chatbot/blob/main/static/intro.png?raw=true)](https://chatbot.leonfong.me/)
 
-A ChatBot based on [OpenAI GPT-3.5 Turbo API](https://platform.openai.com/docs/guides/chat).
+<br/>
+
+[![Built with Astro](https://astro.badg.es/v1/built-with-astro.svg)](https://astro.build)
 
 ## How to build
 
