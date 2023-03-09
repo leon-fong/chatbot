@@ -1,14 +1,22 @@
 ---
+import GithubButton from "./GithubButton.astro";
 import Logo from "./Logo.astro";
+import ThemeToggle from "./ThemeToggle.astro";
 ---
 
 <header>
-  <Logo />
+  <div class="flex justify-between items-center">
+    <Logo />
+    <div>
+      <GithubButton />
+      <ThemeToggle />
+    </div>
+  </div>
   <div class="flex items-center mt-2">
     <span
-      class="text-3xl text-transparent font-extrabold bg-clip-text bg-gradient-to-r from-sky-400 to-emerald-600"
+      class="text-2xl text-transparent font-extrabold bg-clip-text bg-gradient-to-r from-sky-400 to-emerald-600"
       >ChatBot</span
     >
   </div>
-  <p mt-1 text-slate op-60>Based on OpenAI API (gpt-3.5-turbo).</p>
+  <p mt-1 op-60>Based on OpenAI API</p>
 </header>

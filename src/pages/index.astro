@@ -1,17 +1,19 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
-import Footer from "../components/Footer.astro";
 import Generator from "../components/Generator";
 import "../message.css";
 import "katex/dist/katex.min.css";
 import "highlight.js/styles/atom-one-dark.css";
+import Footer from "../components/Footer.astro";
 ---
 
 <Layout title="ChatBot">
-  <main>
-    <Header />
-    <Generator client:load />
+  <div class="min-h-screen grid grid-rows-[1fr_auto]">
+    <main>
+      <Header />
+      <Generator client:load />
+    </main>
     <Footer />
-  </main>
+  </div>
 </Layout>
