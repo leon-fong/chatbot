@@ -1,5 +1,6 @@
 ---
 import GithubButton from "./GithubButton.astro";
+import MiniProgram from "./MiniProgram.astro";
 import Logo from "./Logo.astro";
 import ThemeToggle from "./ThemeToggle.astro";
 ---
@@ -7,7 +8,8 @@ import ThemeToggle from "./ThemeToggle.astro";
 <header>
   <div class="flex justify-between items-center">
     <Logo />
-    <div>
+    <div class="flex justify-between items-center">
+      <MiniProgram />
       <GithubButton />
       <ThemeToggle />
     </div>

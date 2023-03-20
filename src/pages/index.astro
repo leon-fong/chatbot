@@ -6,6 +6,7 @@ import "../message.css";
 import "katex/dist/katex.min.css";
 import "highlight.js/styles/atom-one-dark.css";
 import Footer from "../components/Footer.astro";
+import Popup from "../components/Popup.astro";
 ---
 
 <Layout title="ChatBot">
@@ -13,6 +14,7 @@ import Footer from "../components/Footer.astro";
     <main>
       <Header />
       <Generator client:load />
+      <Popup />
     </main>
     <Footer />
   </div>
