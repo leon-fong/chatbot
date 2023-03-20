@@ -1,0 +1,42 @@
+<script>
+  const handleCloseClick = () => {
+    const element = document.getElementById("modal");
+    element!.classList.add("hidden!");
+  };
+  const miniprogramButton = document.getElementById("close");
+  if (miniprogramButton) {
+    miniprogramButton.addEventListener("click", handleCloseClick);
+  }
+</script>
+
+<!-- component -->
+<div
+  class="hidden! min-w-screen h-screen animated fadeIn faster fixed left-0 top-0 flex justify-center items-center inset-0 z-50 outline-none focus:outline-none bg-no-repeat bg-center bg-cover transition-all duration-300"
+  id="modal"
+>
+  <div class="absolute bg-black opacity-80 inset-0 z-0"></div>
+  <div
+    class="w-full max-w-xs md:max-w-sm p-5 relative mx-auto my-auto rounded-xl shadow-lg bg-white"
+  >
+    <!--content-->
+    <div class="">
+      <!--body-->
+      <div class="text-center p-5 flex-auto justify-center">
+        <img
+          src="/qrcode.jpg"
+          alt="miniprogram_code"
+          class="mx-auto w-[200px]"
+        />
+      </div>
+      <!--footer-->
+      <div class="p-3 mt-2 text-center space-x-4 md:block">
+        <button
+          id="close"
+          class="mb-2 md:mb-0 bg-white px-5 py-2 text-sm shadow-sm font-medium tracking-wider border text-gray-600 rounded-full hover:shadow-lg hover:bg-gray-100"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
